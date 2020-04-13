@@ -14,7 +14,7 @@
     components: {Menu},
     data: function () {
       return {
-        title: 'Елизавета Афти',
+        title: 'ЕЛИЗАВЕТА АФТИ',
         buttons: ['ОБ АВТОРЕ', 'КНИГИ', 'ГАЛЕРЕЯ']
       }
     }
@@ -25,11 +25,12 @@
 <style scoped>
 
   .title {
-    color: white;
+    color: #e9e9e9;
+    text-shadow: 2px 2px 3px black, 0 0 1em;
     position: absolute;
-    right: 5%;
+    right: 3%;
     top: 20%;
-    font-size: 5em;
+    font-size: 3.5em;
     max-width: 30vw;
   }
 
