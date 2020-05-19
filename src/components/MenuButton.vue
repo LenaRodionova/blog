@@ -15,8 +15,6 @@
 <style scoped>
 .menu-button {
   margin-top: 2%;
-  background-color: black;
-  color: white;
   width: 10%;
   text-align: center;
   position: relative;
@@ -29,7 +27,7 @@
   top: 30px;
   left: 50%;
   right: auto;
-  width: 0%;
+  width: 0;
   border-bottom: solid 1px white;
 }
 

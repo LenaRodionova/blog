@@ -2,7 +2,7 @@
   <div class="header">
     <h1 class="title">{{ title }}</h1>
     <img class="header_logo" src="../assets/headerLogo.jpg">
-    <Menu v-bind:key="buttons" v-bind:buttons="buttons" />
+    <Menu :buttons="buttons" />
   </div>
 </template>
 
@@ -21,10 +21,10 @@
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
   .title {
+    text-align: center;
     color: #e9e9e9;
     text-shadow: 2px 2px 3px black, 0 0 1em;
     position: absolute;

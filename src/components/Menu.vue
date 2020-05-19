@@ -1,8 +1,8 @@
 <template>
-  <div class="h">
-    <MenuButton v-bind:key="item" v-for="(item) in buttons"
-                v-bind:menu-item="item" />
-  </div>
+    <div class="menu">
+        <MenuButton :key="item" v-for="item in buttons"
+                    :menu-item="item"/>
+    </div>
 </template>
 
 <script>
@@ -18,14 +18,13 @@
 
 <style scoped>
 
-  .h {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-    background-color: black;
-    width: 100vw;
-    height: 10vh;
-  }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 10vh;
+    }
 
 </style>
