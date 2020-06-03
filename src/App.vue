@@ -3,6 +3,7 @@
         <Header/>
         <Descriptions/>
         <Gallery/>
+        <Footer/>
     </div>
 </template>
 
@@ -10,10 +11,12 @@
   import Header from './components/Header.vue'
   import Descriptions from "./components/Descriptions";
   import Gallery from "./components/Gallery";
+  import Footer from "./components/Footer";
 
   export default {
     name: 'App',
     components: {
+      Footer,
       Gallery,
       Descriptions,
       Header
@@ -39,4 +42,9 @@
         background-color: black;
         color: white;
     }
+
+    ul {
+        list-style-type: none;
+    }
+
 </style>

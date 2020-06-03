@@ -2,7 +2,7 @@
   <div class="header">
     <h1 class="title">{{ title }}</h1>
     <img class="header_logo" src="../assets/headerLogo.jpg">
-    <Menu :buttons="buttons" />
+    <Menu :buttons="buttons" :isHeader="true"/>
   </div>
 </template>
 
