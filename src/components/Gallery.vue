@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="gallery" class="gallery_container">
         <LightGallery
                 :images="images"
                 :index="index"
@@ -9,11 +9,11 @@
         <ul class="gallery_grid">
             <li class="thumb_element"
                 v-for="(thumb, thumbIndex) in [
-          'https://i.pinimg.com/originals/4b/1d/11/4b1d11587776cdda3423684ff74f2660.jpg',
-          'https://anekdotsuper.ru/assets/image/fon/dets-1.jpg',
-          'https://anekdotsuper.ru/assets/image/fon/dets-1.jpg',
-          'https://anekdotsuper.ru/assets/image/fon/dets-1.jpg',
-          'https://pristor.ru/wp-content/uploads/2018/04/%D0%AF-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D1%85%D0%BE%D1%87%D1%83-%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D0%BA-%D1%82%D1%8B-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D1%81-%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D1%8F%D0%BC%D0%B8-%D1%81%D0%B0%D0%BC%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%BD%D1%8B%D0%B5-13.jpg'
+          'https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?cs=srgb&dl=black-hanging-bridge-surrounded-by-green-forest-trees-775201.jpg&fm=jpg',
+          'https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          'https://images.pexels.com/photos/2896668/pexels-photo-2896668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          'https://images.pexels.com/photos/2929227/pexels-photo-2929227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         ]"
                 :key="thumbIndex"
                 @click="index = thumbIndex"
@@ -34,12 +34,11 @@
     data() {
       return {
         images: [
-          { url: 'https://i.pinimg.com/originals/4b/1d/11/4b1d11587776cdda3423684ff74f2660.jpg'},
-          {url: 'https://anekdotsuper.ru/assets/image/fon/dets-1.jpg'},
-          {
-
-            url: 'https://pristor.ru/wp-content/uploads/2018/04/%D0%AF-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D1%85%D0%BE%D1%87%D1%83-%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D0%BA-%D1%82%D1%8B-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D1%81-%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D1%8F%D0%BC%D0%B8-%D1%81%D0%B0%D0%BC%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%BD%D1%8B%D0%B5-13.jpg'
-          },
+            {url:'https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?cs=srgb&dl=black-hanging-bridge-surrounded-by-green-forest-trees-775201.jpg&fm=jpg'},
+            {url:'https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'},
+            {url:'https://images.pexels.com/photos/2896668/pexels-photo-2896668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'},
+            {url:'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'},
+            {url:'https://images.pexels.com/photos/2929227/pexels-photo-2929227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'},
         ],
         index: null,
       };
@@ -77,5 +76,25 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+    @media (max-width: 1023px) {
+        .gallery_container {
+            margin-top: 5%;
+        }
+        .thumb_element{
+            width: 30%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .thumb_element{
+            width: 40%;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .thumb_element{
+            width: 80%;
+        }
     }
 </style>

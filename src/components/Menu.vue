@@ -1,6 +1,6 @@
 <template>
     <div class="menu">
-        <MenuButton :key="item" v-for="item in buttons"
+        <MenuButton :key="item" v-for="item in buttons" :is_header="is_header"
                     :menu-item="item"/>
     </div>
 </template>
@@ -12,7 +12,7 @@
   export default {
     name: "menu",
     components: {MenuButton},
-    props: ["buttons"]
+    props: ["buttons", "is_header"]
   }
 </script>
 
@@ -20,10 +20,11 @@
 
     .menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         position: absolute;
+        align-items: center;
         bottom: 0;
-        width: 100vw;
+        width: 100%;
         height: 10vh;
     }
 
