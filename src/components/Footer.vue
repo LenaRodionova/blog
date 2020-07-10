@@ -12,7 +12,7 @@
     components: {Menu},
     data: function () {
       return {
-        buttons: [{ text: "example@storozhenko.dev", img: require('../assets/m_logo.png'), href: "mailto:example@storozhenko.dev"}, { text: "Instagram", img: require('../assets/i_logo.png'), href: "https://www.instagram.com/"}]
+        buttons: [{ text: "contact@afti.com", img: require('../assets/m_logo.png'), href: "mailto:example@storozhenko.dev"}, { text: "Instagram", img: require('../assets/i_logo.png'), href: "https://www.instagram.com/"}]
       }
     }
   }

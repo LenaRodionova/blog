@@ -28,4 +28,10 @@
         height: 10vh;
     }
 
+    @media (max-width: 1023px) {
+        .menu {
+            justify-content: space-evenly;
+        }
+    }
+
 </style>

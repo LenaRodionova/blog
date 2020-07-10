@@ -1,7 +1,7 @@
 <template>
     <a :href="menuItem.href" class="menu-button " :class="{ 'menu-button-header-width' : is_header, 'menu-button-underline': is_header }">
         <img class="menu-button-img " :src="menuItem.img" alt="">
-        {{ menuItem.text }}
+        {{ windowWidth > 1023 || is_header ? menuItem.text : "" }}
         <div class="border"></div>
     </a>
 </template>
@@ -39,6 +39,9 @@
     @media (max-width: 1023px) {
         .border {
             display: none;
+        }
+        .menu-button-header-width {
+            width: 30%;
         }
     }
 

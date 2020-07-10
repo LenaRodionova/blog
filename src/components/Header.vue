@@ -70,4 +70,10 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 1) 98%);
     }
 
+    @media (max-width: 768px) {
+        .header {
+            height: 90vh;
+        }
+    }
+
 </style>
