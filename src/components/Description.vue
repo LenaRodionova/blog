@@ -85,7 +85,7 @@
         }
 
         .text_mirrored {
-            text-align: left;
+            text-align: justify;
         }
 
         .mirrored {
